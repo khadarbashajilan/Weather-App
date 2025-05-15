@@ -12,22 +12,22 @@
         background-color: black;
     }
     h1{
-        @apply m-10 font-bold text-5xl text-center;
+        @apply m-10 font-bold  text-center sm:text-5xl text-4xl;
     }
     h2{
-        @apply text-center text-4xl font-medium;
+        @apply text-center font-medium sm:text-4xl text-2xl;
     }
     h4{
-        @apply me-95;
+        @apply md:me-95 sm:me-70 me-44;
     }
     input{
-        @apply border-1 rounded-md px-2 py-0.5 w-100;
+        @apply border-1 rounded-md px-2 py-0.5 md:w-100 sm:w-75 w-50;
     }
     form{
         @apply flex flex-col items-center gap-2;
     }
     button{
-        @apply border-1 rounded-md px-2 py-0.5 me-83 mt-1;
+        @apply border-1 rounded-md px-2 py-0.5 mt-1 md:me-83 sm:me-58 me-34;
     }
 
 }
@@ -36,9 +36,9 @@
         @apply text-red-700 font-semibold text-center mt-5;
     }
     .maincard{
-        @apply flex flex-col text-center items-center ps-20 mt-5 relative;
+        @apply flex flex-col text-center items-center ps-15 pe-5 mt-5 relative;
     }
     .data{
-        @apply flex flex-col absolute top-20 text-start  gap-5;
+        @apply flex flex-col absolute top-20 md:text-start  gap-5 text-center;
     }
 }
